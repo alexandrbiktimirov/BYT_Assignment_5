@@ -16,7 +16,6 @@ class Program
         observingThings();
     }
 
-    // No need to replace this code, it should work after implementing proper factory design pattern
     static void dbEngines()
     {
         var sqlEngine = new DataAnalyticsEngine(DatabaseFactory.CreateDatabase(DatabaseType.SqlServer));
@@ -26,7 +25,6 @@ class Program
         oracleEngine.ProcessData("Query to process data for Oracle");
     }
 
-    // No need to replace this code, just implement the adapter class for it to work properly
     static void employeesAdapterDemo()
     {
         string[,] employeesArray = new string[5, 4]
@@ -43,7 +41,6 @@ class Program
         target.ProcessCompanySalary(employeesArray);
     }
 
-    // No need to replace this code, just implement the ConcreteObserver class for it to work properly
     static void observingThings()
     {
         Subject RedMI = new("Red MI Mobile", 10000, "Out Of Stock");
